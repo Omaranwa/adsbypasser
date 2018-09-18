@@ -7,6 +7,7 @@ _.register({
     path: /^\/go\/\w+$/,
   },
   async ready () {
+    $.resetCookies();
     $('form').submit();
   },
 });
